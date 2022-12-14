@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Flask SQL Tutorial</title>
+  </head>
+  <body>
+      <form action="{{ url_for('personadd')}}" method="post">
+          <h5>Enter the user Details</h5>
+          <div>
+            <input type="text" name="studentid" placeholder="studentid">
+        </div>
+          <div>
+              <input type="text" name="studentfirstname" placeholder="studentfirstname">
+          </div>
+          <div>
+            <input type="text" name="studentlastname" placeholder="studentlastname">
+        </div>
+        <div>
+              <input type="text" name="studentadd" placeholder="studentadd">
+          </div>
+          <div>
+            <input type="text" name="studentcity" placeholder="studentcity">
+        </div>
+        <div>
+            <input type="text" name="studentstate" placeholder="studentstate">
+        </div>
+        <div>
+            <input type="text" name="studentemail" placeholder="studentemail">
+        </div>
+        <div>
+            <input type="text" name="bacourse" placeholder="bacourse">
+        </div>
+        <div>
+              <button >Submit</button>
+          </div>
+      </form>
+  </body>
+
+</html>
