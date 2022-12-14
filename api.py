@@ -43,7 +43,7 @@ def create_student():
     studentemail = student_data['studentemail']
     bacourse = student_data['bacourse']
 
-    #pet_description = pet_data['pet_description']
+    #pet_description = student_data['student_description']
     student = Student(
                   studentfirstname =studentfirstname ,
                   studentlastname = studentlastname, 
@@ -57,7 +57,7 @@ def create_student():
     db.session.commit()
     
 
-    return jsonify({"success": True,"response":"Pet added"})
+    return jsonify({"success": True,"response":"student added"})
 
 
 @cross_origin()    
@@ -119,7 +119,7 @@ def update_student(studentid):
         student.studentstate = studentstate
         db.session.add(student)
         db.session.commit()
-        return jsonify({"success": True, "response": "Pet Details updated"})
+        return jsonify({"success": True, "response": "Student details updated"})
         
 
 
